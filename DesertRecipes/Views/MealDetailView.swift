@@ -15,10 +15,10 @@ struct MealDetailView: View {
                         .stroke(Color.gray, lineWidth: 1))
                         .padding(.horizontal)
                     
-                    //Text(meal.strMeal)
-                      //  .font(.largeTitle)
-                        //.bold()
-                        //.padding([.horizontal, .top])
+                    Text(meal.strMeal)
+                        .font(.largeTitle)
+                        .bold()
+                        .padding([.horizontal, .top])
                     
                     Text("Instructions")
                         .font(.title2)
@@ -50,8 +50,10 @@ struct MealDetailView: View {
                 }
             }
             .padding(.top)
+            .background(Color(.systemGray6)) // Add background color
             .navigationTitle(viewModel.mealDetail?.strMeal ?? "Meal Details")
         }
+        .background(Color(.systemGray6)) // Add background color
         .onAppear {
             viewModel.fetchMealDetails(id: mealId)
         }

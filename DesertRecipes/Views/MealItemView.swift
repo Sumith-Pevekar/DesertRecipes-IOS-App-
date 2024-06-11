@@ -33,5 +33,6 @@ struct MealItemView: View {
                 .multilineTextAlignment(.center)
                 .frame(width: 150, height: 40)
         }
+        .background(Color(.systemGray6)) // Add background color
     }
 }
