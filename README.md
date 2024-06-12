@@ -49,7 +49,6 @@ gh repo clone Sumith-Pevekar/DessertRecipes-iOS-App
 
 ### Splash Screen
 Upon launching, the app displays a splash screen with an animation. The splash screen lasts for a few seconds before transitioning to the main screen.
-![App Screenshot](Screenshots/ss1.png)
 
 ### Main Screen
 The main screen features a grid of dessert images. You can scroll through the list to browse various dessert recipes.
