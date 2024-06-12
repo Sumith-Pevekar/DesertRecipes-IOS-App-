@@ -8,15 +8,19 @@ struct MealDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 if let meal = viewModel.mealDetail {
-                    URLImage(url: meal.strMealThumb)
-                        .frame(height: 300)
-                        .cornerRadius(20)
-                        .padding(.horizontal)
+                    
                     
                     Text(meal.strMeal)
                         .font(.largeTitle)
                         .bold()
                         .padding([.horizontal, .top])
+                    
+                    URLImage(url: meal.strMealThumb)
+                        .frame(height: 300)
+                        .cornerRadius(20)
+                        .padding(.horizontal)
+                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 35)
+
                     
                     Text("Instructions")
                         .font(.title2)

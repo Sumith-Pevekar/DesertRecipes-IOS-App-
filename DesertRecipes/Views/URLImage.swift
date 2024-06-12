@@ -8,7 +8,7 @@ struct URLImage: View {
             if let image = phase.image {
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
                     .clipped()
             } else if phase.error != nil {
                 Image(systemName: "photo")

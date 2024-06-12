@@ -38,13 +38,13 @@ struct ContentView: View {
                     }
                     .padding(.horizontal)
                 }
-                .background(Color(red: 0.95, green: 0.95, blue: 0.95))
+                .background(Color(red: 1.0, green: 1.0, blue: 1.0))
                 
                 Spacer()
                 
                 BottomNavigationBar()
             }
-            .background(Color(red: 0.95, green: 0.95, blue: 0.95)) 
+            .background(Color.white.opacity(0.7))
             .onAppear {
                 viewModel.fetchDesserts()
             }

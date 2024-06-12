@@ -4,13 +4,13 @@ struct BottomNavigationBar: View {
     var body: some View {
         HStack {
             Spacer()
-            NavigationBarItem(icon: "house.fill", label: "Home", color: .blue)
+            NavigationBarItem(icon: "house.fill", label: "Home", color: .pink)
             Spacer()
             NavigationBarItem(icon: "heart.fill", label: "Favorites", color: .pink)
             Spacer()
-            NavigationBarItem(icon: "star.fill", label: "Top", color: .yellow)
+            NavigationBarItem(icon: "star.fill", label: "Top", color: .pink)
             Spacer()
-            NavigationBarItem(icon: "gearshape.fill", label: "Settings", color: .gray)
+            NavigationBarItem(icon: "gearshape.fill", label: "Settings", color: .pink)
             Spacer()
         }
         .padding()
