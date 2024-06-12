@@ -31,7 +31,7 @@ Before you begin, ensure you have the following:
 Clone the project repository to your local machine using the following command in the terminal:
 
 ```sh
-git clone <repository_url>
+gh repo clone Sumith-Pevekar/DessertRecipes-iOS-App
 ```
 
 ### Step 2: Open the Project in Xcode
