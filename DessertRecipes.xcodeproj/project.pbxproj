@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D47F9FDE2C18EEC80092A59E /* DesertRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FDD2C18EEC80092A59E /* DesertRecipesApp.swift */; };
+		D47F9FDE2C18EEC80092A59E /* DessertRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FDD2C18EEC80092A59E /* DessertRecipesApp.swift */; };
 		D47F9FED2C18EFB60092A59E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FEC2C18EFB60092A59E /* Meal.swift */; };
 		D47F9FEF2C18F0100092A59E /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FEE2C18F0100092A59E /* MealDetail.swift */; };
 		D47F9FF22C18F1DC0092A59E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FF12C18F1DC0092A59E /* ApiService.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		D47F9FDA2C18EEC80092A59E /* DesertRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesertRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D47F9FDD2C18EEC80092A59E /* DesertRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertRecipesApp.swift; sourceTree = "<group>"; };
+		D47F9FDD2C18EEC80092A59E /* DessertRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertRecipesApp.swift; sourceTree = "<group>"; };
 		D47F9FEC2C18EFB60092A59E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D47F9FEE2C18F0100092A59E /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		D47F9FF12C18F1DC0092A59E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		D47F9FD12C18EEC70092A59E = {
 			isa = PBXGroup;
 			children = (
-				D47F9FDC2C18EEC80092A59E /* DesertRecipes */,
+				D47F9FDC2C18EEC80092A59E /* DessertRecipes */,
 				D47F9FDB2C18EEC80092A59E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,7 +68,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D47F9FDC2C18EEC80092A59E /* DesertRecipes */ = {
+		D47F9FDC2C18EEC80092A59E /* DessertRecipes */ = {
 			isa = PBXGroup;
 			children = (
 				D4932CA62C19A7A500FD0D57 /* Assets.xcassets */,
@@ -76,9 +76,9 @@
 				D47F9FF32C18F1F20092A59E /* ViewModels */,
 				D47F9FF02C18F1C30092A59E /* Services */,
 				D47F9FEB2C18EF850092A59E /* Models */,
-				D47F9FDD2C18EEC80092A59E /* DesertRecipesApp.swift */,
+				D47F9FDD2C18EEC80092A59E /* DessertRecipesApp.swift */,
 			);
-			path = DesertRecipes;
+			path = DessertRecipes;
 			sourceTree = "<group>";
 		};
 		D47F9FEB2C18EF850092A59E /* Models */ = {
@@ -208,7 +208,7 @@
 				D47FA0112C194B380092A59E /* SplashScreen.swift in Sources */,
 				D47F9FED2C18EFB60092A59E /* Meal.swift in Sources */,
 				D47FA0052C191C470092A59E /* MarqueeText.swift in Sources */,
-				D47F9FDE2C18EEC80092A59E /* DesertRecipesApp.swift in Sources */,
+				D47F9FDE2C18EEC80092A59E /* DessertRecipesApp.swift in Sources */,
 				D47F9FF82C18F2710092A59E /* MealDetailViewModel.swift in Sources */,
 				D47F9FF62C18F2320092A59E /* MealListViewModel.swift in Sources */,
 			);
@@ -338,7 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DesertRecipes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DessertRecipes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -366,7 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DesertRecipes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DessertRecipes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
