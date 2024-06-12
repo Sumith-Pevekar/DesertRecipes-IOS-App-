@@ -11,15 +11,19 @@ struct MealDetailView: View {
                     
                     
                     Text(meal.strMeal)
-                        .font(.largeTitle)
+                        .font(.title)
                         .bold()
                         .padding([.horizontal, .top])
-                    
+                    HStack {
+                    Spacer()
                     URLImage(url: meal.strMealThumb)
-                        .frame(height: 300)
-                        .cornerRadius(20)
-                        .padding(.horizontal)
-                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 35)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 300, height: 300)
+                        .cornerRadius(15)
+                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 20)
+                    Spacer()
+                }
+                .padding(.horizontal)
 
                     
                     Text("Instructions")

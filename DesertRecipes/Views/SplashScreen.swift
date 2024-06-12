@@ -11,11 +11,13 @@ struct SplashScreen: View {
                 VStack {
                     Image(systemName: "sparkles")
                         .resizable()
-                        .frame(width: 100, height: 100)
-                    Text("Welcome to Dessert Recipes")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                    Text("Desserts World")
                         .font(.largeTitle)
                         .bold()
-                        .padding(.top, 20)
+                        .foregroundColor(.white)
+                        .padding(.all, 35.0)
                 }
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -26,12 +28,14 @@ struct SplashScreen: View {
                 }
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             LinearGradient(
-                gradient: Gradient(colors: [Color(red: 0.95, green: 0.95, blue: 1.0), Color(red: 0.8, green: 0.8, blue: 0.9)]),
+                gradient: Gradient(colors: [Color(red: 0.95, green: 0.75, blue: 0.75), Color(red: 0.9, green: 0.4, blue: 0.4)]),
                 startPoint: .top,
                 endPoint: .bottom
-            ).edgesIgnoringSafeArea(.all)
+            )
+            .edgesIgnoringSafeArea(.all)
         )
     }
 }

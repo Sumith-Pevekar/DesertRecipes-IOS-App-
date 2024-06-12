@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D47F9FDE2C18EEC80092A59E /* DesertRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FDD2C18EEC80092A59E /* DesertRecipesApp.swift */; };
-		D47F9FE22C18EECA0092A59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47F9FE12C18EECA0092A59E /* Assets.xcassets */; };
-		D47F9FE52C18EECA0092A59E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47F9FE42C18EECA0092A59E /* Preview Assets.xcassets */; };
 		D47F9FED2C18EFB60092A59E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FEC2C18EFB60092A59E /* Meal.swift */; };
 		D47F9FEF2C18F0100092A59E /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FEE2C18F0100092A59E /* MealDetail.swift */; };
 		D47F9FF22C18F1DC0092A59E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9FF12C18F1DC0092A59E /* ApiService.swift */; };
@@ -28,8 +26,6 @@
 /* Begin PBXFileReference section */
 		D47F9FDA2C18EEC80092A59E /* DesertRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesertRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47F9FDD2C18EEC80092A59E /* DesertRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertRecipesApp.swift; sourceTree = "<group>"; };
-		D47F9FE12C18EECA0092A59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D47F9FE42C18EECA0092A59E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D47F9FEC2C18EFB60092A59E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D47F9FEE2C18F0100092A59E /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		D47F9FF12C18F1DC0092A59E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -75,23 +71,14 @@
 		D47F9FDC2C18EEC80092A59E /* DesertRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				D4932CA62C19A7A500FD0D57 /* Assets.xcassets */,
 				D47F9FF92C18F2990092A59E /* Views */,
 				D47F9FF32C18F1F20092A59E /* ViewModels */,
 				D47F9FF02C18F1C30092A59E /* Services */,
 				D47F9FEB2C18EF850092A59E /* Models */,
 				D47F9FDD2C18EEC80092A59E /* DesertRecipesApp.swift */,
-				D47F9FE12C18EECA0092A59E /* Assets.xcassets */,
-				D47F9FE32C18EECA0092A59E /* Preview Content */,
 			);
 			path = DesertRecipes;
-			sourceTree = "<group>";
-		};
-		D47F9FE32C18EECA0092A59E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D47F9FE42C18EECA0092A59E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		D47F9FEB2C18EF850092A59E /* Models */ = {
@@ -133,6 +120,13 @@
 				D47FA0142C1996880092A59E /* RoundedCorner.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D4932CA62C19A7A500FD0D57 /* Assets.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets.xcassets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +187,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47F9FE52C18EECA0092A59E /* Preview Assets.xcassets in Resources */,
-				D47F9FE22C18EECA0092A59E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
