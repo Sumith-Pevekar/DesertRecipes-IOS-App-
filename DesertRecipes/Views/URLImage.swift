@@ -11,8 +11,8 @@ struct URLImage: View {
             case .success(let image):
                 image
                     .resizable()
-                    .scaledToFit()
-                    .transition(.scale)
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
             case .failure:
                 Image(systemName: "photo")
                     .resizable()

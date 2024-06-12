@@ -8,14 +8,15 @@ struct MealItemView: View {
         VStack {
             ZStack {
                 URLImage(url: meal.strMealThumb)
-                    .frame(width: 150, height: 150)
-                    .cornerRadius(10)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray, lineWidth: 1))
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 160, height: 160)
+                    .cornerRadius(20)
+                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
+                    .clipped() // Ensures the image does not overflow
                 
                 if isHovered {
                     Color.black.opacity(0.5)
-                        .cornerRadius(10)
+                        .cornerRadius(20)
                     Text("Click to expand")
                         .foregroundColor(.white)
                         .bold()
@@ -27,12 +28,19 @@ struct MealItemView: View {
                 }
             }
             
-            Text(meal.strMeal)
-                .font(.headline)
-                .foregroundColor(.primary)
-                .multilineTextAlignment(.center)
-                .frame(width: 150, height: 40)
+            if meal.strMeal.count > 15 { // Adjust this threshold as needed
+                MarqueeText(text: meal.strMeal)
+                    .frame(width: 160)
+            } else {
+                Text(meal.strMeal)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 5)
+                    .frame(width: 160) // Ensure text is centered with the image
+            }
         }
-        .background(Color(.systemGray6)) // Add background color
+        .padding(.horizontal, 10)
+        .padding(.vertical, 5)
     }
 }

@@ -10,8 +10,8 @@ struct MealDetailView: View {
                 if let meal = viewModel.mealDetail {
                     URLImage(url: meal.strMealThumb)
                         .frame(height: 300)
-                        .cornerRadius(10)
-                        .overlay(RoundedRectangle(cornerRadius: 10)
+                        .cornerRadius(20)
+                        .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.gray, lineWidth: 1))
                         .padding(.horizontal)
                     
@@ -50,10 +50,10 @@ struct MealDetailView: View {
                 }
             }
             .padding(.top)
-            .background(Color(.systemGray6)) // Add background color
+            .background(Color(red: 0.95, green: 0.95, blue: 0.95)) // Light background color
             .navigationTitle(viewModel.mealDetail?.strMeal ?? "Meal Details")
         }
-        .background(Color(.systemGray6)) // Add background color
+        .background(Color(red: 0.95, green: 0.95, blue: 0.95)) // Light background color
         .onAppear {
             viewModel.fetchMealDetails(id: mealId)
         }
