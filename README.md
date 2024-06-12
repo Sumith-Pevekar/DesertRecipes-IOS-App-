@@ -84,5 +84,6 @@ The recipe detail screen provides detailed information about the selected desser
 3. **Simulator Issues**: Reset the simulator if it behaves unexpectedly. Go to `Device` > `Erase All Content and Settings`.
 
 ---
+Make sure to check the screenshots!
 
 By following this manual, you should be able to set up, run, and use the Dessert Recipes iOS App with ease. Enjoy exploring and making delicious desserts!
